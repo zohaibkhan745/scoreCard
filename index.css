@@ -1,25 +1,51 @@
-.container{
-    background-color: aqua 10%;
-    align-items: center;
-    text-align: center;
-    border: 5px solid red;
-    height: 200px;
-    width: 200px;    
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Added a common sans-serif font */
 }
-.value {
-    background-color: black;
-    font-size: 40px;
-    color: red;
-    height: 50px;
-    width: 50px;
-    border: 2px solid red;
-    align-items: center;
-    text-align: center;
-    margin: auto;
+
+.container {
+    background-color: rgba(0, 0, 255, 0.1); /* Lightened background color */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around; /* Better alignment of columns */
+    padding: 20px; /* Added padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
 }
-button{
-    
+
+#div1, #div2 {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px; /* Reduced margin between columns */
+}
+
+.home {
+    margin-bottom: 5px; /* Reduced margin between "HOME" and score */
+    font-weight: bold; /* Increased font weight for emphasis */
+}
+
+.value {
+    background-color: #333; /* Darkened background color */
+    color: white;
+    font-size: 28px; /* Adjusted font size */
+    width: 60px;
+    height: 60px;
+    line-height: 60px; /* Centered text vertically */
+    border-radius: 50%; /* Circular shape */
+    margin: 5px auto; /* Centered horizontally with reduced margin */
+}
+
+.btn {
+    padding: 10px;
+    font-size: 18px; /* Increased font size */
+    width: 50px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(0, 0, 255, 0.2); /* Semi-transparent background */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 255, 0.5); /* Darken on hover */
 }
